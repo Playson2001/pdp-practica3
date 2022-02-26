@@ -14,6 +14,7 @@ if ($aksName -and $aksRg) {
     Write-Host "Switching kubectl context to $aksRg/$aksName" -ForegroundColor Yellow
     az aks get-credentials -g $aksRg -n $aksName
 }
+# Cambio minimo con la rama Feature a nueva rama feature practica 3
 
 Write-Host "Installing cert-manager on current cluster"
 
