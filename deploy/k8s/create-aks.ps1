@@ -26,6 +26,7 @@ if ($createAcr -eq $true) {
 }
 
 # Create kubernetes cluster in AKS
+# Cambio minimo con la rama Feature a nueva rama feature practica 3
 Write-Host "Creating AKS $resourceGroupName/$serviceName" -ForegroundColor Yellow
 az aks create --resource-group=$resourceGroupName --name=$serviceName --dns-name-prefix=$dnsNamePrefix --generate-ssh-keys --node-count=$nodeCount --node-vm-size=$nodeVMSize --vm-set-type $vmSetType
 
