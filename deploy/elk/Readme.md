@@ -57,6 +57,7 @@ When you have configured the main aspects of your virtual machine, you will have
 }
 
 ## Add your filters / logstash plugins configuration here
+## Cambio minimo con la rama feature-practice-3
 filter {
  	split {
 		field => "events"
